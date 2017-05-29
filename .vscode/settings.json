@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.smd": "mips",
+    "*.asm": "asm",
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "iosfwd": "cpp",
+    "xlocale": "cpp",
+    "xstring": "cpp",
+    "initializer_list": "cpp",
+    "type_traits": "cpp",
+    "xutility": "cpp"
+  }
+}

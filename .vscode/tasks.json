@@ -1,0 +1,64 @@
+
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  // "command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\Tools\\VsDevCmd.bat",
+  // "command": "cmd",
+  // "command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\VC\\Auxiliary\\Build\\vcvars32",
+  // "isShellCommand": true,
+  // "args": ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\VC\\Auxiliary\\Build\\vcvars32"],
+  // "args": [],
+  // "showOutput": "always",
+  "tasks": [
+    {
+      "taskName": "Compile g++ ",
+      // "version": "0.1.0",
+      "command": "g++",
+      "isShellCommand": true,
+      "showOutput": "always",
+      "args": [
+        "${file}"
+      ],
+      "echoCommand": true,
+      "suppressTaskName": true
+    },
+    // {
+    // 	"taskName": "Compile VS",
+    // 	// "version": "0.1.0",
+    // 	"command": "cl",
+    // 	"args": ["${file}", "-EHs"],
+    // 	"isShellCommand": true,
+    // 	"showOutput": "always",
+    // 	// "echoCommand": true,
+    // 	"suppressTaskName": true
+    // },
+    {
+      "taskName": "Run g++",
+      "command": "a",
+      "isShellCommand": true
+    }, 
+    {
+      "taskName": "Run Python",
+      "command": "C:\\Users\\ZOE-PC\\AppData\\Local\\Programs\\Python\\Python36-32",
+      "args": [
+        "app.py"
+      ],
+      "problemMatcher": {
+        "fileLocation": [
+          "relative",
+          "${workspaceRoot}"
+        ],
+        "pattern": {
+          "regexp": "^(.*)+s$",
+          "message": 1
+        }
+      }
+    }
+    // {
+    //     "taskName": "Run VS",
+    //     "command": "${fileDirname}\\${fileBasenameNoExtension}",
+    // 	"isShellCommand": true
+    // }
+  ]
+}
