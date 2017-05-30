@@ -14,6 +14,7 @@ function GreatestCommonSubstring(X, Y)
 
 
     result  = -1
+    a, b = 0
     for a = 0 -> m
         for b = 0 -> n
                 if table[a, b] > result
@@ -21,4 +22,4 @@ function GreatestCommonSubstring(X, Y)
                     break
     
     for k = result->0
-        print table[i-k, j-k]  
+        print X[a-result]
